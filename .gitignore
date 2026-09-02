@@ -1,0 +1,34 @@
+# Source data supplied separately
+data/raw/*
+!data/raw/.gitkeep
+*.zip
+
+# Generated datasets and analytical outputs
+data/processed/*
+!data/processed/.gitkeep
+data/tableau/
+outputs/
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
