@@ -44,3 +44,14 @@ The following thresholds reproduce every non-missing status in the supplied six-
 | Very Late | 361 seconds late or more |
 
 The status field must not be used as an input when predicting performance deviation. Conversely, performance deviation must not be used as an input when predicting status, because either choice would reveal the target directly.
+
+## Fields added during cleaning
+
+| Column | Stored type | Description | Example | Analytical role and limitations |
+|---|---|---|---|---|
+| `event_type` | String | Indicates which scheduled event field is populated. | `departure` | Values are `arrival` or `departure`; derived only from scheduled-field presence. |
+| `scheduled_event_time` | UTC datetime | Canonical scheduled timestamp selected from the arrival or departure field according to `event_type`. | `2026-02-01T07:56:00Z` | Simplifies event-level analysis while leaving both original scheduled fields unchanged. |
+| `actual_event_time` | UTC datetime | Matching actual timestamp for the selected event type. | `2026-02-01T07:57:22Z` | Missing when the corresponding actual event was not recorded. It is outcome information and can create leakage. |
+| `is_after_midnight_service` | Boolean | True when the scheduled event calendar date is one day after `service_date`. | `false` | Preserves the distinction between operating service date and calendar date. |
+| `has_performance_measurement` | Boolean | True when performance deviation and status are available. | `true` | Defines eligibility for performance-status analyses without deleting other records. |
+| `has_departure_delay` | Boolean | True when `delay_on_departure_seconds` is available. | `true` | Defines eligibility for departure-delay analyses without deleting other records. |

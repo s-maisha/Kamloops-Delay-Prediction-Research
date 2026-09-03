@@ -51,6 +51,16 @@ python src/profile_data.py
 
 The machine-readable profile is written to `data/processed/data_profile.json`. The principal findings and field definitions are documented in `docs/DATA_PROFILE.md` and `docs/DATA_DICTIONARY.md`.
 
+## Data cleaning
+
+After profiling, create the cleaned analytical table with:
+
+```bash
+python src/clean_data.py
+```
+
+The script validates event structure and status consistency, preserves all supplied records and values, and adds canonical event timestamps and data-availability flags. It writes `data/processed/transit_events_clean.parquet` and `data/processed/cleaning_report.json`. Cleaning decisions are documented in `docs/CLEANING.md`.
+
 ## Data availability
 
 The repository does not redistribute the original BC Transit archives. The code and documentation will describe how to reproduce derived results after obtaining the source files separately.
