@@ -41,6 +41,16 @@ python src/ingest_data.py
 
 The script reads CSV records directly from the archives, checks source integrity and schema compatibility, parses dates and timestamps, and writes `data/processed/transit_events.parquet`. It also writes `data/processed/ingestion_manifest.json` with source checksums, row counts, date coverage, and output metadata. Both generated files are excluded from version control and can be recreated from the source archives.
 
+## Dataset profiling
+
+After ingestion, generate the structural and data-quality profile with:
+
+```bash
+python src/profile_data.py
+```
+
+The machine-readable profile is written to `data/processed/data_profile.json`. The principal findings and field definitions are documented in `docs/DATA_PROFILE.md` and `docs/DATA_DICTIONARY.md`.
+
 ## Data availability
 
 The repository does not redistribute the original BC Transit archives. The code and documentation will describe how to reproduce derived results after obtaining the source files separately.
