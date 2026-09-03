@@ -14,6 +14,8 @@ outputs/figures/*
 outputs/tables/*
 !outputs/figures/eda_*.png
 !outputs/tables/eda_*.csv
+!outputs/figures/regression_*.png
+!outputs/tables/regression_*.csv
 
 # Python environments and caches
 .venv/

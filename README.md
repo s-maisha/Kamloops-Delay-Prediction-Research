@@ -81,6 +81,16 @@ python src/features.py
 
 The workflow selects departure events, derives schedule-known predictors, and assigns fixed chronological training, validation, and test sets. Target definitions, feature decisions, exclusions, and the exact date boundaries are documented in `docs/METHODS.md`. Generated feature tables remain excluded from version control.
 
+## Regression analysis
+
+Run the chronological departure-delay comparison with:
+
+```bash
+python src/run_regression.py
+```
+
+The workflow evaluates a global median, a historical grouped median, Ridge regression, and Random Forest on the May validation set. The selected machine-learning model is refitted through May and evaluated once on June. Compact results are retained in `outputs/tables/` and `outputs/figures/`; the full interpretation is in `docs/REGRESSION.md`.
+
 ## Data availability
 
 The repository does not redistribute the original BC Transit archives. The code and documentation will describe how to reproduce derived results after obtaining the source files separately.

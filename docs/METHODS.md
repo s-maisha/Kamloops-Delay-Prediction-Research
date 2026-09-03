@@ -81,3 +81,13 @@ python src/features.py
 ```
 
 The command creates `data/processed/regression_features.parquet`, `data/processed/classification_features.parquet`, and `data/processed/feature_report.json`. The report records source and output checksums, feature lists, exclusions, split boundaries, and row counts.
+
+## Regression methods
+
+Four approaches are compared on the May validation set. The global median predicts the January–April training median for every validation record. The historical grouped baseline calculates training-only medians using route, stop, service weekday, and scheduled service hour. Groups require at least 30 historical records and fall back through route-stop-hour, route-stop, route, and global levels when necessary.
+
+Ridge regression provides a regularized linear comparison with `alpha=10`. Random Forest provides a nonlinear tree ensemble with 60 trees, maximum depth 18, minimum leaf size 25, square-root feature sampling, and a maximum bootstrap sample of 400,000 records per tree. A fixed random seed of 42 makes the forest reproducible. These initial settings are fixed before validation rather than selected through a broad tuning search.
+
+Categorical predictors are one-hot encoded, categories with fewer than 20 training occurrences are grouped, and previously unseen categories are ignored safely. Numerical predictors are standardized. The encoder, category frequencies, and scaler are always fitted on the applicable training period only.
+
+MAE is the primary selection metric because it expresses typical prediction error directly in seconds. RMSE and R² provide complementary information about large errors and explained variation. The machine-learning candidate with the lowest May MAE is refitted using January–May, then evaluated once on June. The global and grouped baselines are also recalculated from January–May for the June comparison.

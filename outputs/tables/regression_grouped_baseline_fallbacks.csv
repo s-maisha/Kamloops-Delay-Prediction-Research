@@ -1,0 +1,11 @@
+phase,fallback_level,records,percent
+validation,route + stop + weekday + hour,394921,68.8549
+validation,route + stop + hour,175125,30.5333
+validation,route + stop,2159,0.3764
+validation,route,1350,0.2354
+validation,global median,0,0.0
+test,route + stop + weekday + hour,411702,71.7711
+test,route + stop + hour,158413,27.6158
+test,route + stop,3457,0.6027
+test,route,60,0.0105
+test,global median,0,0.0

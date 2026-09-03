@@ -1,0 +1,8 @@
+phase,model,training_period,evaluation_period,evaluation_rows,mae_seconds,rmse_seconds,r2,fit_seconds,selected_for_test,preprocessing_fit_transform_seconds
+validation,Global median baseline,2026-01-01 to 2026-04-30,2026-05-01 to 2026-05-31,573555,115.9627,172.5143,-0.0723,,False,
+validation,Historical grouped median,2026-01-01 to 2026-04-30,2026-05-01 to 2026-05-31,573555,107.7796,161.7782,0.057,,False,
+validation,Ridge regression,2026-01-01 to 2026-04-30,2026-05-01 to 2026-05-31,573555,113.8783,156.987,0.112,19.6245,False,12.3909
+validation,Random Forest,2026-01-01 to 2026-04-30,2026-05-01 to 2026-05-31,573555,110.9784,158.5167,0.0946,62.8241,True,12.3909
+test,Global median baseline,2026-01-01 to 2026-05-31,2026-06-01 to 2026-06-30,573632,109.3188,159.6007,-0.0441,,False,
+test,Historical grouped median,2026-01-01 to 2026-05-31,2026-06-01 to 2026-06-30,573632,101.3334,148.9466,0.0906,,False,
+test,Random Forest,2026-01-01 to 2026-05-31,2026-06-01 to 2026-06-30,573632,106.3309,149.0029,0.0899,72.8235,True,

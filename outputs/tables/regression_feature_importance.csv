@@ -1,0 +1,8 @@
+feature,importance,method
+route_name,0.352172,impurity-based importance
+stop_id,0.205187,impurity-based importance
+service_day_of_week,0.145966,impurity-based importance
+service_month_number,0.080876,impurity-based importance
+stop_sequence,0.077936,impurity-based importance
+direction_code,0.073465,impurity-based importance
+scheduled_minute_of_service_day,0.064398,impurity-based importance
