@@ -45,6 +45,19 @@ The following thresholds reproduce every non-missing status in the supplied six-
 
 The status field must not be used as an input when predicting performance deviation. Conversely, performance deviation must not be used as an input when predicting status, because either choice would reveal the target directly.
 
+## Modelling fields
+
+The feature workflow creates separate departure-level modelling tables. Target definitions, exclusions, and chronological splits are documented in `docs/METHODS.md`.
+
+| Column | Stored type | Description | Modelling role |
+|---|---|---|---|
+| `data_split` | String | Chronological assignment of `train`, `validation`, or `test`. | Evaluation context; never a predictor. |
+| `service_day_of_week` | String | Weekday name derived from `service_date`. | Categorical predictor. |
+| `scheduled_minute_of_service_day` | Integer | Scheduled clock time expressed as minutes from the service-day start. Values greater than 1,439 represent after-midnight service. | Numerical predictor. |
+| `service_month_number` | Integer | Calendar month number derived from `service_date`. | Numerical predictor representing progression through the study period. |
+| `departure_delay_seconds` | Integer | Unmodified copy of the supplied departure-delay measurement for eligible departure events. | Regression target; never a predictor. |
+| `service_status` | String | Three-class target formed by consolidating the five supplied status labels into Early, On Time, and Late. | Classification target; never a predictor. |
+
 ## Fields added during cleaning
 
 | Column | Stored type | Description | Example | Analytical role and limitations |

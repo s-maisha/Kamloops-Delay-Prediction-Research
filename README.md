@@ -71,6 +71,16 @@ python src/run_eda.py
 
 The analysis writes compact CSV summaries to `outputs/tables/` and figures to `outputs/figures/`. The complete narrative and limitations are documented in `docs/EDA.md`, while `notebooks/02_eda.ipynb` provides an executable question–method–result–interpretation walkthrough.
 
+## Feature and target preparation
+
+Create the leakage-safe regression and classification tables with:
+
+```bash
+python src/features.py
+```
+
+The workflow selects departure events, derives schedule-known predictors, and assigns fixed chronological training, validation, and test sets. Target definitions, feature decisions, exclusions, and the exact date boundaries are documented in `docs/METHODS.md`. Generated feature tables remain excluded from version control.
+
 ## Data availability
 
 The repository does not redistribute the original BC Transit archives. The code and documentation will describe how to reproduce derived results after obtaining the source files separately.
