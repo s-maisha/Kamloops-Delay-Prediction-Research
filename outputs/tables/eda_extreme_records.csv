@@ -1,0 +1,21 @@
+source_file,source_row_number,service_date,route_name,stop_id,stop_name,event_type,on_time_performance_deviation_seconds,on_time_performance_status,extreme_type
+"BCT Kamp_May 01-15, 2026.csv",195991,2026-05-11 00:00:00,17,104747,BC Wildlife Park,arrival,-1997,Very Early,most_early
+"BCT Kamp_June 01-15, 2026.csv",172859,2026-06-09 00:00:00,17,104747,BC Wildlife Park,arrival,-1935,Very Early,most_early
+"BCT Kamp_June 01-15, 2026.csv",47467,2026-06-03 00:00:00,17,104747,BC Wildlife Park,arrival,-1933,Very Early,most_early
+"BCT Kamp_June 01-15, 2026.csv",144683,2026-06-08 00:00:00,17,104747,BC Wildlife Park,arrival,-1907,Very Early,most_early
+"BCT Kamp_June 01-15, 2026.csv",235043,2026-06-12 00:00:00,16,104671,Qu'Appelle Blvd at Stikine St,arrival,-1815,Very Early,most_early
+"BCT Kamp_June 16-30, 2026.csv",128440,2026-06-22 00:00:00,17,104747,BC Wildlife Park,arrival,-1815,Very Early,most_early
+"BCT Kamp_May 16-31,2026.csv",188336,2026-05-26 00:00:00,72,104412,Pacific Way at Pearson Pl,arrival,-1813,Very Early,most_early
+"BCT Kamp_June 16-30, 2026.csv",190596,2026-06-25 00:00:00,17,104747,BC Wildlife Park,arrival,-1810,Very Early,most_early
+"BCT Kamp_June 01-15, 2026.csv",189285,2026-06-10 00:00:00,17,104747,BC Wildlife Park,arrival,-1784,Very Early,most_early
+"BCT Kamp_May 01-15, 2026.csv",261971,2026-05-14 00:00:00,17,104747,BC Wildlife Park,arrival,-1766,Very Early,most_early
+"BCT Kamp_Jan 01-15, 2026.csv",34823,2026-01-03 00:00:00,16,104654,Lansdowne Exch Bay E,departure,4307,Very Late,most_late
+"BCT Kamp_Jan 01-15, 2026.csv",264657,2026-01-14 00:00:00,17,104697,1900 Blk Valleyview Dr,departure,2787,Very Late,most_late
+"BCT Kamp_Jan 01-15, 2026.csv",264655,2026-01-14 00:00:00,17,104695,Falcon Rd at Oriole Rd,departure,2743,Very Late,most_late
+"BCT Kamp_Jan 01-15, 2026.csv",264656,2026-01-14 00:00:00,17,104696,Oriole Rd at Glenwood Dr,departure,2741,Very Late,most_late
+"BCT Kamp_Jan 01-15, 2026.csv",264660,2026-01-14 00:00:00,17,104700,Valleyview Dr at Strom Rd,departure,2741,Very Late,most_late
+"BCT Kamp_Jan 01-15, 2026.csv",264661,2026-01-14 00:00:00,17,104701,Valleyview Dr at Hwy 1,departure,2735,Very Late,most_late
+"BCT Kamp_Jan 01-15, 2026.csv",264658,2026-01-14 00:00:00,17,104698,Valleyview Dr at Knollwood Dr,departure,2734,Very Late,most_late
+"BCT Kamp_Jan 01-15, 2026.csv",264647,2026-01-14 00:00:00,17,104763,Valleyview Dr at McKay Pl,departure,2729,Very Late,most_late
+"BCT Kamp_Jan 01-15, 2026.csv",264643,2026-01-14 00:00:00,17,104760,Hwy 1 at Nina Pl,departure,2727,Very Late,most_late
+"BCT Kamp_Jan 01-15, 2026.csv",264653,2026-01-14 00:00:00,17,104693,Flamingo Rd at Highland Rd,departure,2727,Very Late,most_late

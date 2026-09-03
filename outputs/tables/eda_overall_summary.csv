@@ -1,0 +1,2 @@
+total_clean_records,performance_records,departure_delay_records,after_midnight_records,mean_deviation_seconds,median_deviation_seconds,p90_deviation_seconds,p95_deviation_seconds,early_percent,on_time_percent,late_percent
+3621203,3618099,3470591,72830,107.465,82.0,303.0,405.0,9.676,65.453,24.871

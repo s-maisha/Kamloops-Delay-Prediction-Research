@@ -61,6 +61,16 @@ python src/clean_data.py
 
 The script validates event structure and status consistency, preserves all supplied records and values, and adds canonical event timestamps and data-availability flags. It writes `data/processed/transit_events_clean.parquet` and `data/processed/cleaning_report.json`. Cleaning decisions are documented in `docs/CLEANING.md`.
 
+## Exploratory analysis
+
+After cleaning, regenerate the exploratory tables and figures with:
+
+```bash
+python src/run_eda.py
+```
+
+The analysis writes compact CSV summaries to `outputs/tables/` and figures to `outputs/figures/`. The complete narrative and limitations are documented in `docs/EDA.md`, while `notebooks/02_eda.ipynb` provides an executable question–method–result–interpretation walkthrough.
+
 ## Data availability
 
 The repository does not redistribute the original BC Transit archives. The code and documentation will describe how to reproduce derived results after obtaining the source files separately.

@@ -1,0 +1,8 @@
+weekday_number,weekday,period_group,records,mean_deviation_seconds,median_deviation_seconds,std_deviation_seconds,p90_deviation_seconds,p95_deviation_seconds,early_percent,on_time_percent,late_percent
+0.0,Monday,Weekday,573292,84.464,64.0,164.222,264.0,356.0,11.927,68.124,19.948
+1.0,Tuesday,Weekday,604293,99.18,76.0,166.399,289.0,381.0,10.217,66.485,23.298
+2.0,Wednesday,Weekday,576779,103.284,80.0,167.268,294.0,386.0,9.701,65.917,24.381
+3.0,Thursday,Weekday,585492,109.351,82.0,175.616,304.0,410.0,9.317,65.863,24.82
+4.0,Friday,Weekday,584307,98.537,76.0,166.845,285.0,381.0,10.239,66.889,22.872
+5.0,Saturday,Weekend,417616,126.575,97.0,184.15,340.0,449.0,8.655,62.203,29.142
+6.0,Sunday,Weekend,276320,168.039,132.0,196.221,397.0,513.0,4.878,57.698,37.425

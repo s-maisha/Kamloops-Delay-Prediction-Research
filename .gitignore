@@ -7,7 +7,13 @@ data/raw/*
 data/processed/*
 !data/processed/.gitkeep
 data/tableau/
-outputs/
+outputs/*
+!outputs/figures/
+!outputs/tables/
+outputs/figures/*
+outputs/tables/*
+!outputs/figures/eda_*.png
+!outputs/tables/eda_*.csv
 
 # Python environments and caches
 .venv/

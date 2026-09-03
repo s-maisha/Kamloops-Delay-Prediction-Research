@@ -1,0 +1,3 @@
+period_group,records,mean_deviation_seconds,median_deviation_seconds,std_deviation_seconds,p90_deviation_seconds,p95_deviation_seconds,early_percent,on_time_percent,late_percent
+Weekday,2924163,99.012,75.0,168.321,288.0,383.0,10.275,66.65,23.075
+Weekend,693936,143.086,111.0,190.135,364.0,476.0,7.151,60.409,32.44

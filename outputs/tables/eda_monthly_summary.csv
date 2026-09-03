@@ -1,0 +1,7 @@
+month_number,month,records,mean_deviation_seconds,median_deviation_seconds,std_deviation_seconds,p90_deviation_seconds,p95_deviation_seconds,early_percent,on_time_percent,late_percent
+1.0,January,618440,82.813,61.0,177.054,271.0,371.0,13.832,66.306,19.863
+2.0,February,561340,104.808,79.0,171.836,298.0,400.0,9.745,66.376,23.879
+3.0,March,637615,101.266,76.0,169.531,298.0,398.0,10.552,65.473,23.976
+4.0,April,604015,125.169,96.0,185.715,338.0,445.0,9.218,61.203,29.578
+5.0,May,598229,119.73,93.0,171.464,312.0,415.0,7.31,65.739,26.951
+6.0,June,598460,111.911,88.0,161.559,297.0,390.0,7.208,67.69,25.101
