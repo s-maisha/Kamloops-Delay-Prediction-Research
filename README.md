@@ -91,6 +91,12 @@ python src/run_regression.py
 
 The workflow evaluates a global median, a historical grouped median, Ridge regression, and Random Forest on the May validation set. The selected machine-learning model is refitted through May and evaluated once on June. Compact results are retained in `outputs/tables/` and `outputs/figures/`; the full interpretation is in `docs/REGRESSION.md`.
 
+## Iterative pattern backtesting
+
+The pattern extension compares historical grouping choices, weekly updates, a gradient-boosting correction, and a blend selected on March–May backtests. Run `python src/improve_delay.py`, `python src/boost_delay_patterns.py`, and `python src/audit_delay_patterns.py` in that order. The methods and results are in `docs/PATTERN_BACKTEST.md`. This extension uses the supplied operational records; June results are retrospective because that month was already examined.
+
+`python src/predict_delay_pattern.py --help` describes how to request an individual estimate after generating the local fitted artifacts.
+
 ## Data availability
 
 The repository does not redistribute the original BC Transit archives. The code and documentation will describe how to reproduce derived results after obtaining the source files separately.
